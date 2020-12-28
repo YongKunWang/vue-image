@@ -28,3 +28,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 1. 划分目录结构
 2. 引入CSS文件
 3. vue.config.js
+4. 登录view:
+  4.1 全屏的问题解决！
