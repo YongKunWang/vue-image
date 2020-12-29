@@ -59,6 +59,9 @@ export default {
           // console.log(res)
           // this.$message.error('登录失败!')
           this.$message.success('登陆成功!')
+
+          // 登录完成以后实现跳转主页
+          this.$router.push('/home')
         })
       })
     },
