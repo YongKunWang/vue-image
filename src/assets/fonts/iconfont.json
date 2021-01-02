@@ -18,6 +18,13 @@
       "font_class": "seeuser",
       "unicode": "e502",
       "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "14648061",
+      "name": "alarm",
+      "font_class": "alarm",
+      "unicode": "e599",
+      "unicode_decimal": 58777
     }
   ]
 }

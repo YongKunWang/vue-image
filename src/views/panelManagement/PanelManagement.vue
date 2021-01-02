@@ -5,9 +5,15 @@
 </template>
 
 <script>
+// import elementResizeDetectorMaker from 'element-resize-detector'
+
 export default {
   name: 'PanelManagement'
 }
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+div {
+  background-color: #fff;
+}
+</style>
