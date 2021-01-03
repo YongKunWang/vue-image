@@ -34,19 +34,19 @@
                 align="center"
                 :header-cell-class-name="headerStyle"
               >
-                <el-table-column type="index" align="center" label="#" width="40">
+                <el-table-column type="index" align="center" label="#">
                 </el-table-column>
                 <el-table-column
                   prop="localPort"
                   label="检测端口"
                   align="center"
-                  width="180"
+                  width="160"
                 ></el-table-column>
                 <el-table-column
                   prop="dateTime"
                   label="检测时间"
                   align="center"
-                  width="180"
+                  width="140"
                 ></el-table-column>
                 <el-table-column prop="isAlarm" label="是否报警" align="center">
                   <template slot-scope="scope">
@@ -56,7 +56,7 @@
                 </el-table-column>
                 <el-table-column prop="alarmInfo" label="报警详情" align="center">
                 </el-table-column>
-                <el-table-column label="详情管理" align="center" width="160">
+                <el-table-column label="详情管理" align="center" width="130">
                   <template slot-scope="scope">
                     <el-tooltip class="item" effect="dark" content="详情处理" placement="top">
                       <el-button

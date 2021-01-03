@@ -27,7 +27,13 @@ import {
   MessageBox,
   Dialog,
   Select,
-  Option
+  Option,
+  Aside,
+  Breadcrumb,
+  BreadcrumbItem,
+  DatePicker,
+  Carousel,
+  CarouselItem
 } from 'element-ui'
 
 Vue.use(Container)
@@ -56,6 +62,12 @@ Vue.use(Tag)
 Vue.use(Dialog)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Aside)
+Vue.use(Breadcrumb)
+Vue.use(BreadcrumbItem)
+Vue.use(DatePicker)
+Vue.use(Carousel)
+Vue.use(CarouselItem)
 // 全局挂载！
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm

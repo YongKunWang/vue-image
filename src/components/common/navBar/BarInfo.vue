@@ -17,7 +17,7 @@ export default {
   methods: {
     handleClick(tab, event) {
       // console.log(tab, event)
-      console.log(tab.name)
+      // console.log(tab.name)
       this.$router.push('/' + tab.name)
     }
   }

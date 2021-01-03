@@ -8,6 +8,8 @@ const RealtimeDetection = () => import('views/realtimeDetection/RealtimeDetectio
 const HistoryQuery = () => import('views/historyQuery/HistoryQuery')
 const InformationStatistics = () => import('views/informationStatistics/InformationStatistics')
 
+const HistoryPage = () => import('views/historyQuery/historyPage')
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -20,7 +22,11 @@ const routes = [
     children: [
       { path: '/panelManagement', component: PanelManagement },
       { path: '/realtimeDetection', component: RealtimeDetection },
-      { path: '/historyQuery', component: HistoryQuery },
+      {
+        path: '/historyQuery',
+        component: HistoryQuery,
+        children: [{ path: '/historyQuery-271', component: HistoryPage }]
+      },
       { path: '/informationStatistics', component: InformationStatistics }
     ]
   }
