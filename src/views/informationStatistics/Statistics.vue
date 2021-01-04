@@ -113,8 +113,8 @@
           </panel>
         </div>
         <div class="dialogImgColum">
-          <panel :title="imgDate[0].title">
-            <img :src="imgDate[0].url" alt="" />
+          <panel :title="imgDate[6].title">
+            <img :src="imgDate[6].url" alt="" />
           </panel>
         </div>
       </div>

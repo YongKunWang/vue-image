@@ -22,6 +22,10 @@ const imgDate = [
   {
     title: 'No.27WD纬五路电三路-6',
     url: require('assets/img/resources/6.jpg')
+  },
+  {
+    title: 'No.27WD纬五路电三路-6',
+    url: require('assets/img/resources/7.jpg')
   }
 ]
 const realTableData = [

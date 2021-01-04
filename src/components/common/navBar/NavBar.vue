@@ -2,13 +2,22 @@
   <div class="nav-bar">
     <div class="user-info"><slot name="userInfo"></slot></div>
     <div class="date-info"><slot name="dateInfo"></slot></div>
-    <div class="bar-info"><slot name="barInfo"></slot></div>
+    <div class="bar-info" :activePath="activePath"><slot name="barInfo"></slot></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'NavBar'
+  name: 'NavBar',
+  data() {
+    return {
+      activePath: 'realtimeDetection'
+    }
+  },
+  created() {
+    this.activePath = window.sessionStorage.getItem('activePath')
+    console.log(this.activePath)
+  }
 }
 </script>
 
