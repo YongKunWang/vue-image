@@ -9,6 +9,7 @@ const HistoryQuery = () => import('views/historyQuery/HistoryQuery')
 const InformationStatistics = () => import('views/informationStatistics/InformationStatistics')
 
 const HistoryPage = () => import('views/historyQuery/historyPage')
+const Statistics = () => import('views/informationStatistics/Statistics')
 
 Vue.use(VueRouter)
 
@@ -27,7 +28,11 @@ const routes = [
         component: HistoryQuery,
         children: [{ path: '/historyQuery-271', component: HistoryPage }]
       },
-      { path: '/informationStatistics', component: InformationStatistics }
+      {
+        path: '/informationStatistics',
+        component: InformationStatistics,
+        children: [{ path: '/statistics-271', component: Statistics }]
+      }
     ]
   }
 ]

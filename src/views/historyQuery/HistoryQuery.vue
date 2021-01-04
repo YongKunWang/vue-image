@@ -57,7 +57,7 @@
               align="right"
             >
             </el-date-picker>
-            <el-button icon="el-icon-search"></el-button>
+            <!-- <el-button icon="el-icon-search"></el-button> -->
           </el-col>
           <el-col :span="4">
             <el-button type="primary">原图查询</el-button>
